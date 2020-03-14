@@ -4,6 +4,7 @@ class TestsController < Simpler::Controller
     @time = Time.now
     @tests = Test.all
     # render plain: "Plain text response"
+    render 'tests/list'
   end
 
   def create
