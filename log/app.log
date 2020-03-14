@@ -1,0 +1,100 @@
+I, [2020-03-13T16:59:44.194999 #30764]  INFO -- : Request: GET /tests?category=Backend
+Handler: TestsController#index
+Parameters: {"category"=>"Backend", :id=>""}
+Response: 200 [text/html] app/views/tests/index.html.erb
+
+I, [2020-03-13T16:59:57.887796 #30764]  INFO -- : Request: GET /tests/1?category=Backend
+Handler: TestsController#show
+Parameters: {"category"=>"Backend", :id=>"1"}
+Response: 200 [text/html] app/views/tests/show.html.erb
+
+I, [2020-03-14T21:18:37.360314 #34564]  INFO -- : Request: GET /tests
+Handler: TestsController#index
+Parameters: {:id=>""}
+Response: 200 [text/html] app/views/tests/index.html.erb
+
+I, [2020-03-14T21:18:44.174183 #34564]  INFO -- : Request: GET /tests/1
+Handler: TestsController#show
+Parameters: {:id=>"1"}
+Response: 200 [text/html] app/views/tests/show.html.erb
+
+I, [2020-03-14T21:18:56.491155 #34564]  INFO -- : Request: GET /tests/1
+Handler: TestsController#show
+Parameters: {:id=>"1"}
+Response: 200 [text/html] app/views/tests/show.html.erb
+
+I, [2020-03-14T21:19:08.294104 #34564]  INFO -- : Request: GET /tests
+Handler: TestsController#index
+Parameters: {:id=>""}
+Response: 200 [text/html] app/views/tests/index.html.erb
+
+I, [2020-03-14T21:22:15.139156 #34684]  INFO -- : Request: GET /tests
+Handler: TestsController#index
+Parameters: {:id=>""}
+Response: 200 [text/html] 
+
+I, [2020-03-14T21:22:50.206860 #34694]  INFO -- : Request: GET /tests
+Handler: TestsController#index
+Parameters: {:id=>""}
+Response: 200 [text/html] 
+
+I, [2020-03-14T21:22:58.829512 #34701]  INFO -- : Request: GET /tests
+Handler: TestsController#index
+Parameters: {:id=>""}
+Response: 200 [text/html] 
+
+I, [2020-03-14T21:23:00.507868 #34701]  INFO -- : Request: GET /tests
+Handler: TestsController#index
+Parameters: {:id=>""}
+Response: 200 [text/html] 
+
+I, [2020-03-14T21:23:03.417807 #34701]  INFO -- : Request: GET /tests/1
+Handler: TestsController#show
+Parameters: {:id=>"1"}
+Response: 200 [text/html] app/views/tests/show.html.erb
+
+I, [2020-03-14T21:23:13.140940 #34709]  INFO -- : Request: GET /tests/1
+Handler: TestsController#show
+Parameters: {:id=>"1"}
+Response: 200 [text/html] app/views/tests/show.html.erb
+
+I, [2020-03-14T21:23:37.292054 #34720]  INFO -- : Request: GET /tests/1
+Handler: TestsController#show
+Parameters: {:id=>"1"}
+Response: 200 [text/html] app/views/tests/show.html.erb
+
+I, [2020-03-14T21:23:43.633987 #34720]  INFO -- : Request: GET /tests/
+Handler: NilClass#
+Parameters: 
+Response: 404 [text/plain] 
+
+I, [2020-03-14T21:23:45.139244 #34720]  INFO -- : Request: GET /tests/
+Handler: NilClass#
+Parameters: 
+Response: 404 [text/plain] 
+
+I, [2020-03-14T21:23:59.074365 #34730]  INFO -- : Request: GET /tests/
+Handler: NilClass#
+Parameters: 
+Response: 404 [text/plain] 
+
+I, [2020-03-14T21:25:27.471567 #34814]  INFO -- : Request: GET /tests/
+Handler: NilClass#
+Parameters: 
+Response: 404 [text/plain] 
+
+I, [2020-03-14T21:26:01.106572 #34826]  INFO -- : Request: GET /tests/
+Handler: NilClass#
+Parameters: 
+Response: 404 [text/plain] 
+
+I, [2020-03-14T21:26:02.577573 #34826]  INFO -- : Request: GET /tests/
+Handler: NilClass#
+Parameters: 
+Response: 404 [text/plain] 
+
+I, [2020-03-14T21:26:30.472698 #34826]  INFO -- : Request: GET /tests
+Handler: TestsController#index
+Parameters: {:id=>""}
+Response: 200 [text/html] app/views/tests/list.html.erb
+

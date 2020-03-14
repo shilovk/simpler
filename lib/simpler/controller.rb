@@ -14,8 +14,9 @@ module Simpler
     def make_response(action)
       @request.env['simpler.controller'] = self
       @request.env['simpler.action'] = action
+      @request.env['simpler.params'] = @request.params.merge!(id: record)
 
-      set_default_headers
+      set_headers( { 'Content-Type' => 'text/html' } )
       send(action)
       write_response
 
@@ -28,8 +29,12 @@ module Simpler
       self.class.name.match('(?<name>.+)Controller')[:name].downcase
     end
 
-    def set_default_headers
-      @response['Content-Type'] = 'text/html'
+    def set_headers(headers)
+      headers.each { |key, value| @response[key] = value }
+    end
+
+    def set_status(number)
+      @response.status = number
     end
 
     def write_response
@@ -50,5 +55,8 @@ module Simpler
       @request.env['simpler.template'] = template
     end
 
+    def record
+      @request.path_info.gsub(/[^\d]/, '')
+    end
   end
 end
